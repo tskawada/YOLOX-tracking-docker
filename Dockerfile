@@ -12,6 +12,3 @@ RUN pip install --upgrade pip
 COPY requirements.txt .
 RUN pip install --upgrade protobuf==3.2.0
 RUN pip install -r requirements.txt
-
-RUN mkdir models
-RUN wget https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.pth
