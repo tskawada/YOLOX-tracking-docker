@@ -4,10 +4,10 @@
 ## 動作確認
 ```bash
 # とりあえずdemoを動かす
-git clone @github.com:tskawada/YOLOX-tracking-docker.git
+git clone git@github.com:tskawada/YOLOX-tracking-docker.git
 cd YOLOX-tracking-docker
 sudo docker build .
-sudo docker run -v <host path>:<container path> -it <container id> bash
+sudo docker run -v <host path>:<container path> -it <image id> bash
 python demo.py image -n yolox-s -c models/yolox_s.pth \
     --path assets/dog.jpg \
     --conf 0.25 \
